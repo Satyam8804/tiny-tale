@@ -1,70 +1,36 @@
-# Getting Started with Create React App
+ ## Deployment Link :  https://main--admirable-tarsier-3a7e73.netlify.app/data
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
 
-In the project directory, you can run:
+React: The code is written using React, a popular JavaScript library for building user interfaces.
 
-### `npm start`
+## Hooks Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+useState: The useState hook is used to define and update state variables (data and wordFrequency) in a functional component.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+useEffect: The useEffect hook is used to perform side effects in a functional component. It is used to fetch data and calculate word frequency when the component mounts, and also to render the chart when the word frequency changes.
 
-### `npm test`
+useRef: The useRef hook is used to create a mutable ref object (chartDataInstance) that can hold a reference to the chart instance.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Link:
+The Link component is used for creating a link to navigate to the table section when the "Go Up" image is clicked. This component is likely from a routing library like React Router.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Fetch Api 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Fetch API: The Fetch API is used to make an HTTP request to retrieve the text data from the provided URL.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## CSS:
+The Data.css file contains the CSS styles for the data component.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## HTML elements:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+The code uses various HTML elements such as div, table, thead, tbody, tr, th,td, and button to structure the content and create the table, chart container, and download button.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Library Used for graph 
+  
+  Chart.js: The Chart.js library is used for rendering the bar chart. It provides a powerful and flexible way to create various types of charts.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+CSV Download: The downloadCSV function is responsible for generating the CSV content and initiating the download of the top 20 words. It creates a CSV file with two columns: "Word" and "Frequency", separated by commas.
