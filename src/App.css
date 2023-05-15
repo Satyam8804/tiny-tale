@@ -1,0 +1,26 @@
+.App{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.loading{
+cursor: pointer;
+height: 50px;
+width: 200px;
+top: auto;
+background-color:#00A97F ;
+border: none;
+color: #fff;
+font-size: 20px;
+font-weight: 700;
+border-radius: 5px;
+box-shadow: 3px 3px 7px #2222225d, -3px -3px 7px #2222225d;
+}
+
+.loading:hover{
+  background:aquamarine;
+  color: gray;
+  transform: scale(1.05);
+}
